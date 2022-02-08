@@ -8,9 +8,19 @@ function App() {
     <div className="App">
       <Header>Happy Cleaning</Header>
       <main>
-        <Room text="Küche" isClean />
-        <Room text="Wohnzimmer" isClean={false} />
-        <Room text="Bad" />
+        <Room
+          text="Küche"
+          description="Herdplatten nicht vergesen"
+          isDescriptonVisible
+          isClean
+        />
+        <Room
+          text="Wohnzimmer"
+          description="Staubwischen"
+          isDescriptonVisible
+          isClean={false}
+        />
+        <Room text="Bad" description="Eigener Lappen für das Klo!" />
       </main>
     </div>
   );
